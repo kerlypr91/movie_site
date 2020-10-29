@@ -10,6 +10,8 @@ import Search from '../../Components/Search'
 import FormExample from '../../Components/Form'
 import Rating from '../../Components/Rating'
 
+import { Checkbox } from 'semantic-ui-react'
+
 import './index.scss'
 
 const Routes = [
@@ -163,7 +165,23 @@ export default function Layout() {
         </Switch>
       </section>
       <footer className="layout-container__footer">
-        <div className="footer__copy">&copy; BCC - Bear Code Company</div>
+        <div className="footer__texts">
+          <div className="footer__texts__content">
+            <h2>Want to Annotate?</h2>
+            <h4>
+              Are you a writter? Feel like you could provide some freat feedback
+              on movies? Here are the features and benefits of becoming a
+              member.
+            </h4>
+            <Checkbox label="Discuss movies with friends" defaultChecked />
+            <Checkbox
+              label="Build your collection of discussed films"
+              defaultChecked
+            />
+            <Checkbox label="Save your favorite movies" defaultChecked />
+            <span className="footer__copy">&copy; BCC - Bear Code Company</span>
+          </div>
+        </div>
         <div className="footer__form">
           <FormExample />
         </div>
