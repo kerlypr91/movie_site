@@ -1,13 +1,13 @@
 import React from 'react'
 import Layout from './Containers/Layout'
-import { BrowserRouter as Router } from 'react-router-dom'
+import { HashRouter as Router } from 'react-router-dom'
 import { MovieContextProvider } from './Context'
 import './App.scss'
 
 function App() {
   return (
     <MovieContextProvider>
-      <Router>
+      <Router basename="/">
         <Layout />
       </Router>
     </MovieContextProvider>
