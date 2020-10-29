@@ -1,7 +1,7 @@
 # Movie Site Challenge
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-### Deployed version
+## Deployed version
 
 You can visit the deployed site here: https://kerlypr91.github.io/movie_site/#/home
 
@@ -22,7 +22,7 @@ You will also see any lint errors in the console.
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### Libraries Used
+## Libraries Used
 
 - react-router-dom
 - moment
