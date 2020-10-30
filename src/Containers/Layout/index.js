@@ -106,11 +106,13 @@ export default function Layout() {
   /** Effects */
 
   useEffect(fetchMovies, [])
-
   useEffect(() => {
     fetchMovies()
+  }, [searchStateValue])
+
+  useEffect(() => {
     filterByRating()
-  }, [searchStateValue, ratingFilterValue])
+  }, [ratingFilterValue, searchStateValue])
 
   useEffect(() => {
     setHeasSearch(location.pathname.includes('detail'))
