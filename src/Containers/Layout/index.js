@@ -91,7 +91,9 @@ export default function Layout() {
 
   const filterByRating = () => {
     let filterMovieList = (moviesValue || []).filter(
-      (item) => item.vote_average <= ratingFilterValue * 2
+      (item) =>
+        item.vote_average <= ratingFilterValue * 2 &&
+        item.vote_average >= (ratingFilterValue - 1) * 2
     )
 
     if (ratingFilterValue === 0) {
@@ -104,13 +106,11 @@ export default function Layout() {
   /** Effects */
 
   useEffect(fetchMovies, [])
-  useEffect(() => {
-    fetchMovies()
-  }, [searchStateValue])
 
   useEffect(() => {
+    fetchMovies()
     filterByRating()
-  }, [ratingFilterValue])
+  }, [searchStateValue, ratingFilterValue])
 
   useEffect(() => {
     setHeasSearch(location.pathname.includes('detail'))
