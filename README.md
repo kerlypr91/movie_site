@@ -9,8 +9,8 @@ You can visit the deployed site here: https://kerlypr91.github.io/movie_site/#/h
 
 Clone the project and then, n the project directory, you can run
 
-- yarn install first
-- yarn start 
+- Firt run: `yarn install`
+- Then: `yarn start`
 - Then open http://localhost:3000 to view it in the browser.
 
 ### `yarn start`
